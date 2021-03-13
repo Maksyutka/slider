@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}   
+
+.title-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+}
+
+.title-wrapper::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/img6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 135px;
+    right: 628px;
+}
+
+.title-wrapper::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/img7.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    position: absolute;
+    top: 13px;
+    right: 111px;
+}
+
+.title-wrapper__title {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.title-wrapper__little-title {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: 600;   
+    color: #303030;
+}
+
+.slider__item {
+    outline: none;
+}
+
+.slider {
+    margin: 80px auto 0 auto;
+    max-width: 1400px;
+}
+
+.slider-img {
+    width: 300px;
+    margin: 0 0 0 25px;
+    height: auto;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 400px;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.slick-arrow .slick-prev {
+    left: 0;    
+}
+
+.slider .slick-prev::before {
+    content: "";
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    position: relative;
+    z-index: 20;
+    bottom: 3px;
+    right: 67px;
+}
+
+.slick-arrow.slick-next {
+    right: 0%;
+}
+
+.slider .slick-next::before {
+    content: "";
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    position: relative;
+    z-index: 20;
+    bottom: 3px;
+    right: 9px;
+    transform: rotate(180deg);
+}
